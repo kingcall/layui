@@ -1,16 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <title>layui</title>
-    <meta name="renderer" content="webkit">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" href="../static/css/layui.css"  media="all">
-    <script type="text/javascript" src="../static/layui.js"></script>
-</head>
-<body>
-
+<#include "common/layout.ftl">
+<@layout "页面布局">
 <div class="layui-container">
     <blockquote class="layui-elem-quote">注意：下述演示中的颜色只是做一个区分作用，并非栅格内置。</blockquote>
 
@@ -292,11 +281,4 @@
         </div>
     </div>
 </div>
-
-<!-- 注意：如果你直接复制所有代码到本地，上述js路径需要改成你本地的 -->
-<script>
-
-</script>
-
-</body>
-</html>
+</@layout>
