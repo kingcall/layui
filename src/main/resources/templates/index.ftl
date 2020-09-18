@@ -5,5 +5,6 @@
     <a href="/base/upload"> 文件上传</a><br>
     <a href="/base/lunbo"> 轮播图</a><br>
     <a href="/base/grid"> 页面布局</a><br>
+    <a href="/base/menu"> 菜单</a><br>
 </@layout>
 
