@@ -4,6 +4,7 @@
         <head>
             <title>${title}</title>
             <script type="text/javascript" src="/static/layui.js"></script>
+            <script type="text/javascript" src="/static/jquery.min.js"></script>
             <link rel="stylesheet" href="/static/css/layui.css" media="all">
             <meta name="renderer" content="webkit">
             <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">

@@ -10,23 +10,31 @@
         <div class="layui-side layui-bg-black">
             <div class="layui-side-scroll">
                 <ul class="layui-nav layui-nav-tree layui-nav-side" lay-filter="test">
-                    <li class="layui-nav-item"><a href="">产品1</a></li>
-                    <li class="layui-nav-item"><a href="">产品2</a></li>
-                    <li class="layui-nav-item"><a href="">产品3</a></li>
-                    <li class="layui-nav-item"><a href="">产品4</a></li>
-                    <li class="layui-nav-item"><a href="">产品5</a></li>
-                    <li class="layui-nav-item"><a href="">产品6</a></li>
-                    <li class="layui-nav-item"><a href="">产品7</a></li>
-                    <li class="layui-nav-item"><a href="">产品8</a></li>
-                    <li class="layui-nav-item"><a href="">产品9</a></li>
-                    <li class="layui-nav-item"><a href="">产品10</a></li>
+                    <li class="layui-nav-item"><a data-src="">产品1</a></li>
+                    <li class="layui-nav-item"><a data-src="">产品2</a></li>
+                    <li class="layui-nav-item"><a data-src="">产品3</a></li>
+                    <li class="layui-nav-item"><a data-src="">产品4</a></li>
+                    <li class="layui-nav-item"><a data-src="">产品5</a></li>
+                    <li class="layui-nav-item"><a data-src="">产品6</a></li>
+                    <li class="layui-nav-item"><a data-src="">产品7</a></li>
+                    <li class="layui-nav-item"><a data-src="">产品8</a></li>
+                    <li class="layui-nav-item"><a data-src="">产品9</a></li>
+                    <li class="layui-nav-item"><a data-src="">产品10</a></li>
+                    <li class="layui-nav-item"><a data-src="">产品11</a></li>
+                    <li class="layui-nav-item"><a data-src="">产品12</a></li>
+                    <li class="layui-nav-item"><a data-src="">产品13</a></li>
+                    <li class="layui-nav-item"><a data-src="">产品14</a></li>
+                    <li class="layui-nav-item"><a data-src="">产品15</a></li>
+                    <li class="layui-nav-item"><a data-src="">产品16</a></li>
+                    <li class="layui-nav-item"><a data-src="">产品17</a></li>
+                    <li class="layui-nav-item"><a data-src="">产品18</a></li>
                 </ul>
             </div>
         </div>
 
         <div class="layui-body">
             <!-- 内容主体区域 -->
-            <div style="padding: 1px;">
+            <div id="content" style="padding: 1px;">
                 <h1>内容主体区域</h1>
                 <h1>内容主体区域</h1>
                 <h1>内容主体区域</h1>
@@ -59,4 +67,16 @@
         var element = layui.element;
 
     });
+
+    $('.layui-nav-item a').on('click', function () {
+        var dataid = $(this);
+        var address =$(this).attr("data-src");
+        console.log("===================================")
+        console.log(dataid)
+        console.log(address)
+        $("#content").innerHTML="dfdsssssssssssssssssss"
+
+
+    })
+
 </script>
