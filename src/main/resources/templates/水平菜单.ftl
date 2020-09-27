@@ -10,10 +10,10 @@
         <div class="layui-side layui-bg-black">
             <div class="layui-side-scroll">
                 <ul class="layui-nav layui-nav-tree layui-nav-side" lay-filter="test">
-                    <li class="layui-nav-item"><a data-src="">产品1</a></li>
-                    <li class="layui-nav-item"><a data-src="">产品2</a></li>
-                    <li class="layui-nav-item"><a data-src="">产品3</a></li>
-                    <li class="layui-nav-item"><a data-src="">产品4</a></li>
+                    <li class="layui-nav-item"><a data-src="/menu/1">产品1</a></li>
+                    <li class="layui-nav-item"><a data-src="/menu/2">产品2</a></li>
+                    <li class="layui-nav-item"><a data-src="/menu/3">产品3</a></li>
+                    <li class="layui-nav-item"><a data-src="/menu/4">产品4</a></li>
                     <li class="layui-nav-item"><a data-src="">产品5</a></li>
                     <li class="layui-nav-item"><a data-src="">产品6</a></li>
                     <li class="layui-nav-item"><a data-src="">产品7</a></li>
@@ -69,14 +69,21 @@
     });
 
     $('.layui-nav-item a').on('click', function () {
-        var dataid = $(this);
-        var address =$(this).attr("data-src");
-        console.log("===================================")
-        console.log(dataid)
-        console.log(address)
-        $("#content").innerHTML="dfdsssssssssssssssssss"
-
-
+        var address = $(this).attr("data-src");
+        $("#content").html("<b>Hello world!</b>");
+        console.log("http://192.168.0.107" + address)
+        $.post(
+            "http://192.168.0.107" + address,
+            {
+                id: 1
+            },
+            function (data, status) {
+                console.log(data);
+                console.log(status);
+                $("#content").text(data);
+            },
+        );
     })
+
 
 </script>

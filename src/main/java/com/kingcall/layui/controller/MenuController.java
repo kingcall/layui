@@ -9,11 +9,14 @@ import java.io.IOException;
 @Controller
 @RequestMapping("/menu")
 public class MenuController extends BaseController{
-    @GetMapping("/{id:\\d*}")
+    @RequestMapping("/{id:\\d*}")
     @ResponseBody
     public String menu(@PathVariable(name = "id") int id)  {
-        return "水平菜单";
+        System.out.println("菜单呗请求");
+        return "{\"data\":\"水平菜单\"+id}";
     }
+
+
 
 
 }
