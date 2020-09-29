@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>layui</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="../../static/css/layui.css" media="all">
+    <link rel="stylesheet" href="../../static/css/global.css" media="all">
+    <script type="text/javascript" src="../../static/layui.js"></script>
+    <style>
+        .layui-nav-tree .layui-nav-item a{
+            height: 35px;
+        }
+    </style>
+</head>
+<body>
+<div class="fly-header layui-bg-black">
+    <div class="layui-container">
+        <a class="fly-logo" href="/">
+            <img src="../../static/images/logo.png" alt="layui">
+        </a>
+        <ul class="layui-nav fly-nav layui-hide-xs">
+            <li class="layui-nav-item layui-this">
+                <a href="/home"><i class="iconfont icon-jiaoliu"></i>交流</a>
+            </li>
+            <li class="layui-nav-item">
+                <a href="/case"><i class="iconfont icon-iconmingxinganli"></i>企业案例</a>
+            </li>
+            <li class="layui-nav-item">
+                <a href="/course" target="_blank"><i class="iconfont icon-ui"></i>教程</a>
+            </li>
+        </ul>
+        !
+    </div>
+</div>
+
+<div class="layui-container">
+    <ul class="layui-nav layui-nav-tree layui-nav-side layui-bg-green" style="top: 70px">
+        <li class="layui-nav-item"><a data-src="/menu/1">1</a></li>
+        <li class="layui-nav-item"><a data-src="/menu/1">2</a></li>
+        <li class="layui-nav-item"><a data-src="/menu/1">3</a></li>
+        <li class="layui-nav-item"><a data-src="/menu/1">4</a></li>
+        <li class="layui-nav-item"><a data-src="/menu/1">5</a></li>
+        <li class="layui-nav-item"><a data-src="/menu/1">6</a></li>
+        <li class="layui-nav-item"><a data-src="/menu/1">7</a></li>
+        <li class="layui-nav-item"><a data-src="/menu/1">8</a></li>
+        <li class="layui-nav-item"><a data-src="/menu/1">9</a></li>
+        <li class="layui-nav-item"><a data-src="/menu/1">10</a></li>
+        <li class="layui-nav-item"><a data-src="/menu/1">10</a></li>
+        <li class="layui-nav-item"><a data-src="/menu/1">10</a></li>
+        <li class="layui-nav-item"><a data-src="/menu/1">10</a></li>
+        <li class="layui-nav-item"><a data-src="/menu/1">10</a></li>
+        <li class="layui-nav-item"><a data-src="/menu/1">10</a></li>
+        <li class="layui-nav-item"><a data-src="/menu/1">10</a></li>
+        <li class="layui-nav-item"><a data-src="/menu/1">10</a></li>
+        <li class="layui-nav-item"><a data-src="/menu/1">10</a></li>
+        <li class="layui-nav-item"><a data-src="/menu/1">10</a></li>
+        <li class="layui-nav-item"><a data-src="/menu/1">10</a></li>
+    </ul>
+    <div class="layui-col-md10 layui-body">
+        <div id="content" style="padding: 1px;">
+            <h1>内容主体区域1</h1>
+            <h1>内容主体区域</h1>
+            <h1>内容主体区域</h1>
+            <h1>内容主体区域</h1>
+            <h1>内容主体区域</h1>
+            <h1>内容主体区域</h1>
+            <h1>内容主体区域</h1>
+            <h1>内容主体区域</h1>
+            <h1>内容主体区域</h1>
+            <h1>内容主体区域</h1>
+            <h1>内容主体区域</h1>
+            <h1>内容主体区域</h1>
+            <h1>内容主体区域</h1>
+            <h1>内容主体区域</h1>
+            <h1>内容主体区域</h1>
+            <h1>内容主体区域</h1>
+            <h1>内容主体区域</h1>
+        </div>
+    </div>
+</div>
+
+<div class="layui-layer layui-layer-page layui-layer-dir" id="layui-layer1" type="page" times="1" showtime="0" contype="object" style="z-index: 19891015; top: 31.5px; left: 1122px; margin-left: -15px;"><div class="layui-layer-title" style="cursor: move;">目录</div><div id="" class="layui-layer-content"><ul class="site-dir layui-layer-wrap" style="display: block;">
+    <li><a href="#use"><cite>快速使用</cite></a></li>
+    <li><a href="#options"><cite>基础参数</cite></a></li>
+    <li><a href="#parseData"><cite>数据源格式解析</cite></a></li>
+    <li><a href="#onchange">左右穿梭的回调</a></li>
+
+    <li><a href="#method"><cite>基础方法</cite></a></li>
+    <ul style="margin-left: 15px;">
+        <li><a href="#getData">获得右侧数据</a></li>
+        <li><a href="#reload">实例重载</a></li>
+    </ul>
+</ul></div><span class="layui-layer-setwin"><a class="layui-layer-ico layui-layer-close layui-layer-close1" href="javascript:;"></a></span><span class="layui-layer-resize"></span></div>
+
+
+<script>
+    layui.use('element', function () {
+        var element = layui.element; //导航的hover效果、二级菜单等功能，需要依赖element模块
+
+        //监听导航点击
+        element.on('nav(demo)', function (elem) {
+            //console.log(elem)
+            layer.msg(elem.text());
+        });
+    });
+</script>
+
+</body>
+</html>

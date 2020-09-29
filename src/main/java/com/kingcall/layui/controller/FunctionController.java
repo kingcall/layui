@@ -46,8 +46,17 @@ public class FunctionController extends BaseController{
         list.add("5,sql 视图");
         list.add("6,sql 进阶");
         list.add("7,sql 高级");
+        list.add("7,sql 高级");
+        list.add("7,sql 高级");
+        list.add("7,sql 高级");
+        list.add("7,sql 高级");
+        list.add("7,sql 高级");
+        list.add("7,sql 高级");
+        list.add("7,sql 高级");
+        list.add("7,sql 高级");
         model.addAttribute("data", list);
-        return "水平菜单";
+        model.addAttribute("initContent", "这是一篇高级文章");
+        return "垂直菜单";
     }
 
 
